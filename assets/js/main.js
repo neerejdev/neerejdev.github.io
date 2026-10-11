@@ -325,10 +325,11 @@ window.toggleAbstract = function(id) {
   }
 };
 
-// 6. PUBLICATION FILTERING
+// 6. CONTENT FILTERING (PUBLICATIONS & WRITING)
 function initPublicationFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const pubCards = document.querySelectorAll('.pub-card');
+  const writingEntries = document.querySelectorAll('.writing-entry');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -336,13 +337,25 @@ function initPublicationFilters() {
       btn.classList.add('active');
       const filter = btn.getAttribute('data-filter');
 
-      pubCards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-type') === filter) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      if (pubCards.length > 0) {
+        pubCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-type') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      if (writingEntries.length > 0) {
+        writingEntries.forEach(entry => {
+          if (filter === 'all' || entry.getAttribute('data-category') === filter) {
+            entry.style.display = entry.classList.contains('featured-editorial') ? 'block' : 'flex';
+          } else {
+            entry.style.display = 'none';
+          }
+        });
+      }
     });
   });
 }

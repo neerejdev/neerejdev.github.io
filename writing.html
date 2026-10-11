@@ -6,7 +6,7 @@
   <title>Public Writing & Commentary | Neerej Dev</title>
   
   <meta name="author" content="Neerej Dev" />
-  <meta name="description" content="Public scholarship, journalistic op-eds, and media commentary by Neerej Dev." />
+  <meta name="description" content="Public scholarship, journalistic op-eds, environmental discourse, and visual media criticism by Neerej Dev." />
   
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/favicon.png" />
@@ -55,98 +55,207 @@
 
   <!-- Content -->
   <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem;">
-    <div style="max-width: 900px; margin: 0 auto;">
+    <div style="max-width: 960px; margin: 0 auto;">
       
-      <div style="margin-bottom: 3rem;">
-        <h1 style="font-size: 2.75rem; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 0.75rem;">
+      <!-- Page Title & Header -->
+      <div style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2.75rem; font-weight: 900; letter-spacing: -0.03em;">
           Public Writing & Commentary
         </h1>
-        <p style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.6;">
-          Public-facing cultural criticism, media analysis, climate reporting, and opinion essays across leading news platforms.
-        </p>
       </div>
 
-      <div class="writing-grid">
+      <!-- Category Filter Pills -->
+      <div class="pub-filters" style="margin-bottom: 2.25rem;">
+        <button class="filter-btn active" data-filter="all">All Essays (5)</button>
+        <button class="filter-btn" data-filter="climate">Climate & Environmental Risk</button>
+        <button class="filter-btn" data-filter="culture">Visual Culture & Memory</button>
+        <button class="filter-btn" data-filter="pedagogy">Higher Ed & Pedagogy</button>
+      </div>
+
+      <!-- FEATURED LEAD ESSAY: South Asia Journal -->
+      <article class="featured-editorial writing-entry" data-category="climate">
+        <div class="editorial-badge-row">
+          <span class="featured-pill">Featured Lead Essay</span>
+          <span class="outlet-chip chip-saj">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            South Asia Journal
+          </span>
+          <span class="reading-time">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            7 min read &middot; Environmental Politics
+          </span>
+        </div>
+
+        <h2 class="editorial-headline">
+          <a href="http://southasiajournal.net/from-global-doom-to-scientific-framing-shifting-discourses-on-climate-change-in-india/" target="_blank" rel="noopener">
+            From Global Doom to Scientific Framing: Shifting Discourses on Climate Change in India
+          </a>
+        </h2>
+
+        <div class="quote-callout">
+          “The discursive trajectory of Indian climate coverage signals a critical transition: rather than treating ecological breakdown as an undifferentiated global apocalypse, media narratives have institutionalized risk into quantified, scientific, and economic frameworks.”
+        </div>
+
+        <p class="editorial-excerpt">
+          A forensic critical discourse analysis examining how major Indian national dailies recalibrated their linguistic and epistemological framing of the environmental crisis. The analysis tracks the ideological move from existential fatalism to policy-driven accountability in South Asian environmental communication.
+        </p>
+
+        <div style="display: flex; gap: 0.85rem; flex-wrap: wrap; align-items: center; padding-top: 1rem; border-top: 1px solid var(--card-border);">
+          <a href="http://southasiajournal.net/from-global-doom-to-scientific-framing-shifting-discourses-on-climate-change-in-india/" target="_blank" rel="noopener" class="btn-primary">
+            Read on South Asia Journal
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <a href="files/From-Global-Doom-to-Scientific-Framing-South-Asia-Journal.pdf" target="_blank" class="btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            Download PDF
+          </a>
+        </div>
+      </article>
+
+      <!-- EDITORIAL GRID FOR OTHER COMMENTARY -->
+      <div class="editorial-grid">
         
         <!-- 1. Deccan Herald -->
-        <div class="writing-card">
+        <article class="editorial-card writing-entry" data-category="climate">
           <div>
-            <div class="writing-outlet">Deccan Herald</div>
-            <h2 class="writing-title">Climate Change: Catching Up with Lost Time</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-              An examination of the delayed international temporalities governing environmental policy, tracing how carbon accountability is systematically externalized across vulnerable post-colonial ecologies.
-            </p>
-          </div>
-          <a href="https://www.deccanherald.com/opinion/in-perspective/climate-change-catching-up-with-lost-time-1118784.html" target="_blank" rel="noopener" class="btn-primary" style="align-self: flex-start; padding: 0.5rem 1rem; font-size: 0.85rem;">
-            Read on Deccan Herald &rarr;
-          </a>
-        </div>
+            <div class="editorial-badge-row" style="margin-bottom: 0.85rem;">
+              <span class="outlet-chip chip-dh">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path></svg>
+                Deccan Herald
+              </span>
+              <span class="reading-time">5 min read</span>
+            </div>
 
-        <!-- 2. South Asia Journal -->
-        <div class="writing-card">
-          <div>
-            <div class="writing-outlet">South Asia Journal</div>
-            <h2 class="writing-title">From Global Doom to Scientific Framing: Shifting Discourses on Climate Change in India</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-              A critical discourse analysis of mainstream Indian news outlets, identifying a gradual transition from apocalyptic existential framing toward institutionalized scientific and economic risk assessments.
+            <h3 class="editorial-card-title">
+              <a href="https://www.deccanherald.com/opinion/in-perspective/climate-change-catching-up-with-lost-time-1118784.html" target="_blank" rel="noopener">
+                Climate Change: Catching Up with Lost Time
+              </a>
+            </h3>
+
+            <div class="quote-callout" style="font-size: 0.88rem; margin: 0.75rem 0;">
+              “International climate diplomacy operates through a temporal paradox: while ecological tipping points accelerate, political mandates remain suspended in procrastinated compromise.”
+            </div>
+
+            <p class="editorial-excerpt">
+              Critical intervention in the op-ed pages of <em>Deccan Herald</em> interrogating global climate summits, carbon inequality, and how post-colonial states bear the temporal and economic burdens of international inaction.
             </p>
           </div>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <a href="http://southasiajournal.net/from-global-doom-to-scientific-framing-shifting-discourses-on-climate-change-in-india/" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-              Read on SAJ &rarr;
+
+          <div class="editorial-footer">
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Opinion &middot; In Perspective</span>
+            <a href="https://www.deccanherald.com/opinion/in-perspective/climate-change-catching-up-with-lost-time-1118784.html" target="_blank" rel="noopener" class="editorial-cta-btn">
+              Read Op-Ed &rarr;
             </a>
-            <a href="files/From-Global-Doom-to-Scientific-Framing-South-Asia-Journal.pdf" target="_blank" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-              PDF
+          </div>
+        </article>
+
+        <!-- 2. Times of India: Nostalgia -->
+        <article class="editorial-card writing-entry" data-category="culture">
+          <div>
+            <div class="editorial-badge-row" style="margin-bottom: 0.85rem;">
+              <span class="outlet-chip chip-toi">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                The Times of India
+              </span>
+              <span class="reading-time">4 min read</span>
+            </div>
+
+            <h3 class="editorial-card-title">
+              <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/reviewing-the-past-unscathed-nostalgia-or-ghoulish-melancholia/" target="_blank" rel="noopener">
+                (Re)viewing the Past: Unscathed Nostalgia or Ghoulish Melancholia?
+              </a>
+            </h3>
+
+            <div class="quote-callout" style="font-size: 0.88rem; margin: 0.75rem 0;">
+              “The algorithmic consumption of vintage aesthetics does not resurrect authentic historical consciousness; rather, it commodifies grief into an endless loop of mediated melancholy.”
+            </div>
+
+            <p class="editorial-excerpt">
+              An exploration of retro visual culture, cinema archives, and the psychological mechanisms governing modern digital nostalgia across social platforms.
+            </p>
+          </div>
+
+          <div class="editorial-footer">
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Cultural Commentary</span>
+            <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/reviewing-the-past-unscathed-nostalgia-or-ghoulish-melancholia/" target="_blank" rel="noopener" class="editorial-cta-btn">
+              Read Essay &rarr;
             </a>
           </div>
-        </div>
+        </article>
 
-        <!-- 3. Times of India 1 -->
-        <div class="writing-card">
+        <!-- 3. Times of India: Censored War -->
+        <article class="editorial-card writing-entry" data-category="culture">
           <div>
-            <div class="writing-outlet">The Times of India</div>
-            <h2 class="writing-title">(Re)viewing the Past: Unscathed Nostalgia or Ghoulish Melancholia?</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-              Interrogating cultural memory, retro aesthetic consumption, and the psychological function of melancholy in contemporary digital visual media.
+            <div class="editorial-badge-row" style="margin-bottom: 0.85rem;">
+              <span class="outlet-chip chip-toi">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                The Times of India
+              </span>
+              <span class="reading-time">5 min read</span>
+            </div>
+
+            <h3 class="editorial-card-title">
+              <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/the-censored-war-visual-experience-through-images/" target="_blank" rel="noopener">
+                The Censored War: Visual Experience Through Images
+              </a>
+            </h3>
+
+            <div class="quote-callout" style="font-size: 0.88rem; margin: 0.75rem 0;">
+              “By sanitizing the corporeal brutality of armed conflict, state-filtered photojournalism transforms horrific violence into palatable geopolitical spectacle.”
+            </div>
+
+            <p class="editorial-excerpt">
+              Reflections on wartime photojournalism, visual ethics, institutional censorship, and how state media filter the affective reality of modern combat for civilian consumption.
             </p>
           </div>
-          <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/reviewing-the-past-unscathed-nostalgia-or-ghoulish-melancholia/" target="_blank" rel="noopener" class="btn-primary" style="align-self: flex-start; padding: 0.5rem 1rem; font-size: 0.85rem;">
-            Read on Times of India &rarr;
-          </a>
-        </div>
 
-        <!-- 4. Times of India 2 -->
-        <div class="writing-card">
+          <div class="editorial-footer">
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Visual Ethics & Media</span>
+            <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/the-censored-war-visual-experience-through-images/" target="_blank" rel="noopener" class="editorial-cta-btn">
+              Read Essay &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. Daijiworld: The Flunking Role -->
+        <article class="editorial-card writing-entry" data-category="pedagogy">
           <div>
-            <div class="writing-outlet">The Times of India</div>
-            <h2 class="writing-title">The Censored War: Visual Experience Through Images</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-              Reflections on wartime photojournalism, visual ethics, institutional censorship, and the politics of spectatorship in state-regulated conflicts.
+            <div class="editorial-badge-row" style="margin-bottom: 0.85rem;">
+              <span class="outlet-chip chip-dw">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                Daijiworld
+              </span>
+              <span class="reading-time">4 min read</span>
+            </div>
+
+            <h3 class="editorial-card-title">
+              <a href="https://www.daijiworld.com/chan/exclusiveDisplay?articlesID=5831" target="_blank" rel="noopener">
+                The Flunking Role: From Instructor to Curator
+              </a>
+            </h3>
+
+            <div class="quote-callout" style="font-size: 0.88rem; margin: 0.75rem 0;">
+              “When algorithms can deliver information instantaneously, the educator's mandate ceases to be pedagogical recitation; the university must become an incubator of critical curation.”
+            </div>
+
+            <p class="editorial-excerpt">
+              A pedagogical provocation on higher education in the era of generative AI and search immediacy, advocating for critical curation and hermeneutic discernment over rote knowledge delivery.
             </p>
           </div>
-          <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/the-censored-war-visual-experience-through-images/" target="_blank" rel="noopener" class="btn-primary" style="align-self: flex-start; padding: 0.5rem 1rem; font-size: 0.85rem;">
-            Read on Times of India &rarr;
-          </a>
-        </div>
 
-        <!-- 5. Daijiworld -->
-        <div class="writing-card">
-          <div>
-            <div class="writing-outlet">Daijiworld</div>
-            <h2 class="writing-title">The Flunking Role: From Instructor to Curator</h2>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
-              Critique of higher education pedagogy in the age of omnipresent internet search and generative knowledge archives, arguing for pedagogies of curation.
-            </p>
+          <div class="editorial-footer">
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted);">Education & Technology</span>
+            <a href="https://www.daijiworld.com/chan/exclusiveDisplay?articlesID=5831" target="_blank" rel="noopener" class="editorial-cta-btn">
+              Read Article &rarr;
+            </a>
           </div>
-          <a href="https://www.daijiworld.com/chan/exclusiveDisplay?articlesID=5831" target="_blank" rel="noopener" class="btn-primary" style="align-self: flex-start; padding: 0.5rem 1rem; font-size: 0.85rem;">
-            Read on Daijiworld &rarr;
-          </a>
-        </div>
+        </article>
 
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content">
@@ -171,7 +280,7 @@
       <div class="modal-body">
         <div class="search-input-wrap">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="search-input" class="search-input" placeholder="Search keywords..." />
+          <input type="text" id="search-input" class="search-input" placeholder="Search essays, op-eds, keywords..." />
         </div>
         <div class="search-results" id="search-results"></div>
       </div>
