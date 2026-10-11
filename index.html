@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neerej Dev | Doctoral Researcher & Sociologist</title>
+  
+  <meta name="author" content="Neerej Dev" />
+  <meta name="description" content="Personal academic website of Neerej Dev, Doctoral Researcher at the University of Wolverhampton examining technology, mobility, algorithmic acculturation, and media infrastructures." />
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:site_name" content="Neerej Dev" />
+  <meta property="og:title" content="Neerej Dev | Doctoral Researcher" />
+  <meta property="og:description" content="Doctoral Researcher at University of Wolverhampton. Investigating migration, care economies, generative AI, and algorithmic acculturation." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="assets/images/neerej-avatar.webp" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Neerej Dev" />
+  <meta name="twitter:description" content="Doctoral Researcher at the University of Wolverhampton." />
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Schema.org Academic Profile JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Neerej Dev",
+    "jobTitle": "Doctoral Researcher",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Wolverhampton"
+    },
+    "email": "mailto:N.dev2@wlv.ac.uk",
+    "telephone": "+447721998365",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=PYp7N-kAAAAJ&hl=en",
+      "https://orcid.org/0000-0003-3918-2406",
+      "https://www.linkedin.com/in/neerej-dev/",
+      "https://github.com/neerejdev"
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+
+  <!-- ========================================================================
+       STICKY HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-dot"></span>
+          Neerej Dev
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="publications.html">Publications</a></li>
+          <li><a class="nav-link" href="research.html">Research & Grants</a></li>
+          <li><a class="nav-link" href="talks.html">Presentations</a></li>
+          <li><a class="nav-link" href="writing.html">Writing</a></li>
+          <li><a class="nav-link" href="cv.html">CV</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Live Instant Search Button -->
+          <button class="icon-btn" id="search-toggle" aria-label="Search site" title="Search (Cmd+K)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Dark / Light Theme Toggle -->
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle Appearance">
+            <!-- Sun icon (for dark mode) -->
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO PROFILE & BIOGRAPHY (hanzhang.xyz Layout)
+       ======================================================================== -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- LEFT COLUMN: Avatar, Title, Social Badges, Contact Quick Links -->
+          <aside class="profile-col">
+            <div class="avatar-wrapper">
+              <picture>
+                <source srcset="assets/images/neerej-avatar.webp" type="image/webp">
+                <img src="assets/images/neerej-avatar.png" alt="Neerej Dev" class="avatar-img" width="260" height="260" />
+              </picture>
+              <span class="status-badge">PhD Researcher</span>
+            </div>
+
+            <h1 class="profile-name">Neerej Dev</h1>
+            <p class="profile-title">Doctoral Researcher</p>
+            <p class="profile-institution">
+              <a href="https://www.wlv.ac.uk" target="_blank" rel="noopener">University of Wolverhampton</a>
+            </p>
+            <p class="profile-fellowship">
+              School of Social Sciences & Humanities<br>
+              Visiting Fellow, Swedish Collegium for Advanced Study (SCAS)
+            </p>
+
+            <!-- Social Links (Round interactive buttons) -->
+            <div class="social-links">
+              <!-- Email -->
+              <a href="mailto:N.dev2@wlv.ac.uk" class="social-btn" title="Email: N.dev2@wlv.ac.uk" aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <!-- Google Scholar -->
+              <a href="https://scholar.google.com/citations?user=PYp7N-kAAAAJ&hl=en" target="_blank" rel="noopener" class="social-btn" title="Google Scholar Profile" aria-label="Google Scholar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 12a8 8 0 0 1 7.162 1.44L24 9.5 12 0z"/>
+                </svg>
+              </a>
+
+              <!-- ORCID -->
+              <a href="https://orcid.org/0000-0003-3918-2406" target="_blank" rel="noopener" class="social-btn" title="ORCID iD" aria-label="ORCID">
+                <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor">
+                  <path d="M128 0C57.307 0 0 57.307 0 128s57.307 128 128 128 128-57.307 128-128S198.693 0 128 0zm-43.23 189.702H62.91V86.298h21.86v103.404zm-10.93-117.75c-7.07 0-12.8-5.73-12.8-12.8s5.73-12.8 12.8-12.8 12.8 5.73 12.8 12.8-5.73 12.8-12.8 12.8zm118.88 64.91c0 30.5-17.72 52.84-48.45 52.84H110.1V86.3h35.81c29.13 0 48.36 21.08 48.36 50.56zm-22.38.25c0-18.42-10.6-32.33-28.72-32.33h-12.78v64.67h12.78c18.12 0 28.72-13.92 28.72-32.34z"/>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/neerej-dev/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.761-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/neerejdev" target="_blank" rel="noopener" class="social-btn" title="GitHub Profile" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+447721998365" class="social-btn" title="Phone: +44 7721 998365" aria-label="Phone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Quick Meta Box -->
+            <div class="sidebar-box">
+              <div class="sidebar-box-title">Affiliation & Research Hub</div>
+              <ul class="meta-list">
+                <li class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Wolverhampton & Birmingham, United Kingdom</span>
+                </li>
+                <li class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                  <span>Supervisors: Prof. Meena Dhanda & Prof. Aleksandra Galasińska</span>
+                </li>
+                <li class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Doctoral Period: 2024 – Present</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- RIGHT COLUMN: Biography, CV Download, Education, Research Interests -->
+          <article class="main-col">
+            <div class="bio-prose">
+              <p class="bio-lead">
+                I am a <strong>doctoral researcher at the School of Social Sciences and Humanities, University of Wolverhampton</strong>, examining how technology, mobility, and media infrastructures shape gendered identities and social stratification in contemporary transnational circuits.
+              </p>
+              
+              <p>
+                My doctoral research—<em>“Scripting the Settler Dream: Instagram Influencers, Generative AI, and the Negotiation of Malayali Masculinities in UK Adult Social Care”</em>—draws on multi-sited field ethnography with Malayali migrant care workers to examine masculinity, settler aspiration, and labour precarity in Britain's post-Brexit care economy.
+              </p>
+
+              <p>
+                A closely related strand investigates how migrant workers leverage conversational AI interfaces, such as <strong>ChatGPT and Google Gemini</strong>, to negotiate the linguistic, emotional, and regulatory demands of professional adult social care, developing the novel conceptual paradigm of <strong>algorithmic acculturation</strong>. Alongside my qualitative ethnography, I bring statistical-methods and computational training, integrating interpretive analysis with social media scraping and discourse analysis.
+              </p>
+
+              <p>
+                My research has been recognized and supported by competitive fellowships and awards from the <strong>Swedish Research Council (Vetenskapsrådet)</strong>, the <strong>Swedish Collegium for Advanced Study (SCAS)</strong>, the <strong>European Sociological Association (ESA)</strong>, <strong>ARL Leibniz Association / RSA</strong>, and <strong>SOAS, University of London</strong>. I have published in leading peer-reviewed venues including the <em>International Journal of Human–Computer Interaction</em>, <em>Economic and Political Weekly</em>, and the <em>Journal of Ethnic and Migration Studies</em> (forthcoming).
+              </p>
+            </div>
+
+            <!-- Download CV & Research Action Banner (hanzhang.xyz CTA style) -->
+            <div class="action-banner">
+              <a href="files/Neerej_Dev_CV.pdf" target="_blank" class="btn-primary" download="Neerej_Dev_CV.pdf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV Here (PDF)
+              </a>
+
+              <a href="mailto:N.dev2@wlv.ac.uk" class="btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Get In Touch
+              </a>
+            </div>
+
+            <!-- Research Interests Tag Cloud -->
+            <div style="margin-bottom: 2rem;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.85rem; color: var(--text-primary);">
+                Key Research Areas & Conceptual Foci
+              </h3>
+              <div class="tag-cloud">
+                <span class="tag-pill">Algorithmic Acculturation</span>
+                <span class="tag-pill">Post-Brexit Care Economy</span>
+                <span class="tag-pill">Conversational AI & LLMs</span>
+                <span class="tag-pill">Malayali Transnational Migration</span>
+                <span class="tag-pill">Caring Masculinities</span>
+                <span class="tag-pill">Sociomaterial Infrastructures</span>
+                <span class="tag-pill">Hybrid Poetics Framework</span>
+                <span class="tag-pill">Critical Discourse Analysis</span>
+                <span class="tag-pill">Computational Text Analysis</span>
+              </div>
+            </div>
+
+            <!-- ==============================================================
+                 EDUCATION SECTION (hanzhang.xyz style cards)
+                 ============================================================== -->
+            <section class="section" id="education" style="border-top: none; padding-top: 1rem;">
+              <div class="section-header">
+                <div class="section-title-wrap">
+                  <div class="section-icon-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <h2 class="section-title">Education</h2>
+                </div>
+              </div>
+
+              <div class="education-grid">
+                <!-- PhD -->
+                <div class="edu-card">
+                  <div class="edu-header">
+                    <div class="edu-degree">PhD in Social Sciences & Humanities</div>
+                    <span class="edu-year">2024 – present</span>
+                  </div>
+                  <div class="edu-institution">University of Wolverhampton, UK</div>
+                  <div class="edu-details">
+                    <strong>Thesis:</strong> “Scripting the Settler Dream: Instagram Influencers, Generative AI, and the Negotiation of Malayali Masculinities in UK Adult Social Care”<br>
+                    <strong>Supervisors:</strong> Prof. Meena Dhanda & Prof. Aleksandra Galasińska
+                  </div>
+                </div>
+
+                <!-- MPhil -->
+                <div class="edu-card">
+                  <div class="edu-header">
+                    <div class="edu-degree">MPhil in Media Studies</div>
+                    <span class="edu-year">2019 – 2021</span>
+                  </div>
+                  <div class="edu-institution">Christ University, Bangalore, India</div>
+                  <div class="edu-details">
+                    <strong>Dissertation:</strong> Critical Discourse Analysis of Selected Editorials in Malayala Manorama and Mathrubhumi.
+                  </div>
+                </div>
+
+                <!-- MA -->
+                <div class="edu-card">
+                  <div class="edu-header">
+                    <div class="edu-degree">MA in Media & Communication</div>
+                    <span class="edu-year">2016 – 2018</span>
+                  </div>
+                  <div class="edu-institution">Christ University, Bangalore, India</div>
+                  <div class="edu-details">
+                    Specialisation in media theory, cultural studies, digital journalism, and quantitative research methods.
+                  </div>
+                </div>
+
+                <!-- BA -->
+                <div class="edu-card">
+                  <div class="edu-header">
+                    <div class="edu-degree">BA (Hons) Journalism & English</div>
+                    <span class="edu-year">2013 – 2016</span>
+                  </div>
+                  <div class="edu-institution">St. Aloysius College, Mangalore, India</div>
+                  <div class="edu-details">
+                    Rigorous literary criticism, print journalism, communication ethics, and investigative reporting.
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==============================================================
+                 FELLOWSHIPS, GRANTS & AWARDS (hanzhang.xyz style)
+                 ============================================================== -->
+            <section class="section" id="awards">
+              <div class="section-header">
+                <div class="section-title-wrap">
+                  <div class="section-icon-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="7"></circle>
+                      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                  </div>
+                  <h2 class="section-title">Fellowships & Awards</h2>
+                </div>
+                <a href="research.html" class="section-link">View all &rarr;</a>
+              </div>
+
+              <div class="award-grid">
+                <!-- SCAS Uppsala -->
+                <div class="award-card">
+                  <div class="award-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  </div>
+                  <div class="award-body">
+                    <div class="award-org">Swedish Collegium for Advanced Study (SCAS)</div>
+                    <div class="award-title">Visiting Research Fellow (Full Funding) — CAT proposal on medical student migration in Europe</div>
+                    <div class="award-date">October 2025</div>
+                  </div>
+                </div>
+
+                <!-- Vetenskapsrådet / Linköping -->
+                <div class="award-card">
+                  <div class="award-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  </div>
+                  <div class="award-body">
+                    <div class="award-org">Swedish Research Council (Vetenskapsrådet)</div>
+                    <div class="award-title">PhD Graduate School Scholar — “Reproductive Racial Capitalism: New Theoretical Perspectives,” Linköping University</div>
+                    <div class="award-date">May 2026</div>
+                  </div>
+                </div>
+
+                <!-- ESA -->
+                <div class="award-card">
+                  <div class="award-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  </div>
+                  <div class="award-body">
+                    <div class="award-org">European Sociological Association (ESA)</div>
+                    <div class="award-title">PhD Summer School Full Programme Award</div>
+                    <div class="award-date">August 2026</div>
+                  </div>
+                </div>
+
+                <!-- ARL Leibniz / RSA Amsterdam -->
+                <div class="award-card">
+                  <div class="award-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  </div>
+                  <div class="award-body">
+                    <div class="award-org">ARL (Leibniz Association) & RSA</div>
+                    <div class="award-title">PhD Summer School Award, University of Amsterdam — “New Perspectives on Urban Infrastructures”</div>
+                    <div class="award-date">July 2026</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==============================================================
+                 SELECTED PUBLICATIONS PREVIEW (hanzhang.xyz style)
+                 ============================================================== -->
+            <section class="section" id="publications">
+              <div class="section-header">
+                <div class="section-title-wrap">
+                  <div class="section-icon-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  </div>
+                  <h2 class="section-title">Selected Publications</h2>
+                </div>
+                <a href="publications.html" class="section-link">View all publications &rarr;</a>
+              </div>
+
+              <div class="pub-list">
+                
+                <!-- JEMS Forthcoming -->
+                <div class="pub-card" id="pub-dev2026algorithmic" data-type="journal">
+                  <div class="pub-meta-top">
+                    <span class="pub-type-badge">Journal Article</span>
+                    <span class="pub-year-badge">Forthcoming</span>
+                  </div>
+                  <h3 class="pub-title">
+                    <a href="publications.html#pub-dev2026algorithmic">Algorithmic Acculturation in Adult Social Care: Migrant Workers, Conversational AI and the Making of Professional English</a>
+                  </h3>
+                  <div class="pub-authors"><strong>Dev, N.</strong></div>
+                  <div class="pub-venue">Journal of Ethnic and Migration Studies</div>
+                  <div class="pub-links">
+                    <a href="files/Neerej_Dev_CV.pdf" class="pub-action-btn btn-pdf" target="_blank">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                      PDF
+                    </a>
+                    <button class="pub-action-btn" onclick="openBibtexModal('dev2026algorithmic')">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                      BibTeX
+                    </button>
+                    <button class="pub-action-btn" onclick="toggleAbstract('dev2026algorithmic')">
+                      Abstract
+                    </button>
+                  </div>
+                  <div class="pub-abstract" id="abstract-dev2026algorithmic">
+                    Examines how Malayali migrant care workers in post-Brexit Britain utilize generative conversational AI platforms (ChatGPT and Google Gemini) to navigate the punitive linguistic and regulatory demands of clinical recording in elder care homes, theorizing the emergence of <em>algorithmic acculturation</em>.
+                  </div>
+                </div>
+
+                <!-- EPW 2026 Settler Dreams -->
+                <div class="pub-card" id="pub-dev2026from" data-type="journal">
+                  <div class="pub-meta-top">
+                    <span class="pub-type-badge">Journal Article</span>
+                    <span class="pub-year-badge">2026</span>
+                  </div>
+                  <h3 class="pub-title">
+                    <a href="files/From-Rivermind-to-Care-Homes-Settler-Dreams-EPW-2026.pdf" target="_blank">From Rivermind to Care Homes: Settler Dreams and Britain’s Care Crisis</a>
+                  </h3>
+                  <div class="pub-authors"><strong>Dev, N.</strong></div>
+                  <div class="pub-venue">Economic and Political Weekly, Vol. 61, No. 11 (DOI: 10.71279/epw.v61i11.44344)</div>
+                  <div class="pub-links">
+                    <a href="files/From-Rivermind-to-Care-Homes-Settler-Dreams-EPW-2026.pdf" class="pub-action-btn btn-pdf" target="_blank">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                      PDF
+                    </a>
+                    <a href="https://doi.org/10.71279/epw.v61i11.44344" class="pub-action-btn" target="_blank" rel="noopener">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      DOI / Publisher
+                    </a>
+                    <button class="pub-action-btn" onclick="openBibtexModal('dev2026from')">
+                      BibTeX
+                    </button>
+                    <button class="pub-action-btn" onclick="toggleAbstract('dev2026from')">
+                      Abstract
+                    </button>
+                  </div>
+                  <div class="pub-abstract" id="abstract-dev2026from">
+                    Critically interrogates how post-Brexit visa conditionality and institutional shortages produce hyper-precarity for Malayali migrant care workers, tracing how aspirations of settlement collide with the extractive routines of the British care home.
+                  </div>
+                </div>
+
+                <!-- IJHCI 2026 -->
+                <div class="pub-card" id="pub-dev2026human" data-type="journal">
+                  <div class="pub-meta-top">
+                    <span class="pub-type-badge">Journal Article</span>
+                    <span class="pub-year-badge">2026</span>
+                  </div>
+                  <h3 class="pub-title">
+                    <a href="files/Human-Voices-and-Algorithmic-Echoes-IJHCI-2026.pdf" target="_blank">Human Voices and Algorithmic Echoes: Resignifying Transfeminine Experiences Through a Hybrid Poetics Framework</a>
+                  </h3>
+                  <div class="pub-authors"><strong>Dev, N.</strong>, & Joy, S.</div>
+                  <div class="pub-venue">International Journal of Human–Computer Interaction (DOI: 10.1080/10447318.2026.2615218)</div>
+                  <div class="pub-links">
+                    <a href="files/Human-Voices-and-Algorithmic-Echoes-IJHCI-2026.pdf" class="pub-action-btn btn-pdf" target="_blank">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                      PDF
+                    </a>
+                    <a href="https://doi.org/10.1080/10447318.2026.2615218" class="pub-action-btn" target="_blank" rel="noopener">
+                      DOI / Publisher
+                    </a>
+                    <button class="pub-action-btn" onclick="openBibtexModal('dev2026human')">
+                      BibTeX
+                    </button>
+                    <button class="pub-action-btn" onclick="toggleAbstract('dev2026human')">
+                      Abstract
+                    </button>
+                  </div>
+                  <div class="pub-abstract" id="abstract-dev2026human">
+                    Introduces the Hybrid Poetics Framework (HPF) to evaluate whether LLMs (GPT-4o) can authentically echo marginalized transfeminine subjectivities through focus groups and Turing-style qualitative discernment.
+                  </div>
+                </div>
+
+                <!-- Anthropological Forum 2025 -->
+                <div class="pub-card" id="pub-dev2025young" data-type="review">
+                  <div class="pub-meta-top">
+                    <span class="pub-type-badge">Book Review</span>
+                    <span class="pub-year-badge">2025</span>
+                  </div>
+                  <h3 class="pub-title">
+                    <a href="files/Young-People-Media-and-Nostalgia-Review-2025.pdf" target="_blank">Review of <em>Young People, Media, and Nostalgia: An Ethnography of How Youth Imagine Their Lives</em> by Rodrigo Muñoz-González</a>
+                  </h3>
+                  <div class="pub-authors"><strong>Dev, N.</strong>, & Joy, S.</div>
+                  <div class="pub-venue">Anthropological Forum (DOI: 10.1080/00664677.2025.2550301)</div>
+                  <div class="pub-links">
+                    <a href="files/Young-People-Media-and-Nostalgia-Review-2025.pdf" class="pub-action-btn btn-pdf" target="_blank">
+                      PDF
+                    </a>
+                    <a href="https://doi.org/10.1080/00664677.2025.2550301" class="pub-action-btn" target="_blank" rel="noopener">
+                      DOI
+                    </a>
+                    <button class="pub-action-btn" onclick="openBibtexModal('dev2025young')">
+                      BibTeX
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- ==============================================================
+                 PUBLIC WRITING & MEDIA ESSAYS
+                 ============================================================== -->
+            <section class="section" id="writing">
+              <div class="section-header">
+                <div class="section-title-wrap">
+                  <div class="section-icon-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 20h9"></path>
+                      <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                  </div>
+                  <h2 class="section-title">Public Writing & Commentary</h2>
+                </div>
+                <a href="writing.html" class="section-link">View all &rarr;</a>
+              </div>
+
+              <div class="writing-grid">
+                <div class="writing-card">
+                  <div>
+                    <div class="writing-outlet">Deccan Herald</div>
+                    <h3 class="writing-title">Climate Change: Catching Up with Lost Time</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                      Critical analysis of environmental discourse, policy inertia, and climate temporalities in the Global South.
+                    </p>
+                  </div>
+                  <a href="https://www.deccanherald.com/opinion/in-perspective/climate-change-catching-up-with-lost-time-1118784.html" target="_blank" rel="noopener" class="writing-link">
+                    Read Op-Ed &rarr;
+                  </a>
+                </div>
+
+                <div class="writing-card">
+                  <div>
+                    <div class="writing-outlet">South Asia Journal</div>
+                    <h3 class="writing-title">From Global Doom to Scientific Framing: Shifting Discourses on Climate Change in India</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                      Examining the linguistic reframing of ecological crisis in national Indian newsprint.
+                    </p>
+                  </div>
+                  <a href="http://southasiajournal.net/from-global-doom-to-scientific-framing-shifting-discourses-on-climate-change-in-india/" target="_blank" rel="noopener" class="writing-link">
+                    Read Essay &rarr;
+                  </a>
+                </div>
+
+                <div class="writing-card">
+                  <div>
+                    <div class="writing-outlet">The Times of India</div>
+                    <h3 class="writing-title">(Re)viewing the Past: Unscathed Nostalgia or Ghoulish Melancholia?</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                      Cultural reflections on mediated memory, cinematic melancholy, and visual nostalgia.
+                    </p>
+                  </div>
+                  <a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/reviewing-the-past-unscathed-nostalgia-or-ghoulish-melancholia/" target="_blank" rel="noopener" class="writing-link">
+                    Read Article &rarr;
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- ==============================================================
+                 ACADEMIC REFEREES
+                 ============================================================== -->
+            <section class="section" id="referees">
+              <div class="section-header">
+                <div class="section-title-wrap">
+                  <div class="section-icon-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h2 class="section-title">Academic Referees</h2>
+                </div>
+              </div>
+
+              <div class="referee-grid">
+                <div class="referee-card">
+                  <div class="referee-name">Professor Meena Dhanda DPhil (Oxford), SFHEA</div>
+                  <div class="referee-title">Professor of Philosophy and Cultural Politics, University of Wolverhampton</div>
+                  <div class="referee-desc">
+                    Visiting Professor, London School of Economics and Political Science (LSE)<br>
+                    Editor-in-Chief, <em>Oxford Intersections: Racism By Context</em> (Oxford University Press)
+                  </div>
+                  <a href="mailto:M.Dhanda@wlv.ac.uk" class="referee-email">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    M.Dhanda@wlv.ac.uk
+                  </a>
+                </div>
+
+                <div class="referee-card">
+                  <div class="referee-name">Dr Divya Kumari K. P.</div>
+                  <div class="referee-title">Assistant Professor, Department of Media Studies</div>
+                  <div class="referee-desc">
+                    CHRIST (Deemed to be University), Bangalore, India<br>
+                    Expertise in Critical Discourse Analysis, Media Pedagogy, and Political Communication
+                  </div>
+                  <a href="mailto:divyakumari.kp@cucc.in" class="referee-email">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    divyakumari.kp@cucc.in
+                  </a>
+                </div>
+              </div>
+            </section>
+
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          &copy; 2026 Neerej Dev. Hosted on GitHub Pages.
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="mailto:N.dev2@wlv.ac.uk">Contact</a></li>
+          <li><a href="#top">Back to top &uarr;</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       LIVE SEARCH MODAL (CMD+K)
+       ======================================================================== -->
+  <div class="modal-overlay" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="search-modal-title">Instant Search</h3>
+        <button class="modal-close" id="search-modal-close" aria-label="Close search">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search by paper title, keyword, grant, year..." autocomplete="off" />
+        </div>
+        <div class="search-results" id="search-results">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BIBTEX MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="bibtex-modal" role="dialog" aria-modal="true" aria-labelledby="bibtex-modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bibtex-modal-title">BibTeX Citation</h3>
+        <button class="modal-close" id="bibtex-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre class="bibtex-code" id="bibtex-code-content"></pre>
+        <button class="btn-primary" id="bibtex-copy-btn" style="width: 100%; justify-content: center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          Copy BibTeX Citation
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

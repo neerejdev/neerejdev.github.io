@@ -1,0 +1,1244 @@
+/* ==========================================================================
+   NEEREJ DEV - ACADEMIC PORTFOLIO STYLESHEET
+   Inspired by Hugo Blox Academic (hanzhang.xyz) with refined modern aesthetics
+   ========================================================================== */
+
+:root {
+  /* Colors - Light Theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: #e2e8f0;
+  --card-hover-border: #0d9488;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --accent-primary: #0d9488;       /* Emerald / Teal like hanzhang.xyz */
+  --accent-secondary: #059669;
+  --accent-hover: #0f766e;
+  --accent-light: #ccfbf1;
+  --accent-glow: rgba(13, 148, 136, 0.15);
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-border: rgba(226, 232, 240, 0.8);
+  --badge-bg: #f1f5f9;
+  --badge-text: #0f766e;
+  --badge-border: #cbd5e1;
+  --code-bg: #f8fafc;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+  --radius-full: 9999px;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  /* Colors - Dark Theme */
+  --bg-primary: #0b0f17;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1e293b;
+  --card-bg: rgba(17, 24, 39, 0.85);
+  --card-border: #1f2937;
+  --card-hover-border: #14b8a6;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent-primary: #14b8a6;       /* Glowing Teal */
+  --accent-secondary: #10b981;
+  --accent-hover: #2dd4bf;
+  --accent-light: rgba(20, 184, 166, 0.15);
+  --accent-glow: rgba(20, 184, 166, 0.25);
+  --nav-bg: rgba(11, 15, 23, 0.85);
+  --nav-border: rgba(31, 41, 55, 0.8);
+  --badge-bg: rgba(30, 41, 59, 0.8);
+  --badge-text: #2dd4bf;
+  --badge-border: #334155;
+  --code-bg: #030712;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  letter-spacing: -0.011em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1.1rem;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--nav-border);
+  transition: var(--transition);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.25rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-primary);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0.6rem;
+  right: 0.6rem;
+  height: 2px;
+  background-color: var(--accent-primary);
+  border-radius: 2px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-btn {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.icon-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* ==========================================================================
+   HERO / RESUME BIOGRAPHY SECTION (hanzhang.xyz layout)
+   ========================================================================== */
+.hero-section {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* Left Profile Column */
+.profile-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 6rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--bg-primary);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar-wrapper:hover .avatar-img {
+  transform: scale(1.02);
+  box-shadow: 0 25px 30px -10px var(--accent-glow), 0 0 0 3px var(--accent-primary);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+  background: var(--accent-primary);
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+  box-shadow: var(--shadow-md);
+  letter-spacing: 0.02em;
+}
+
+.profile-name {
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.03em;
+}
+
+.profile-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 0.35rem;
+}
+
+.profile-institution {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.profile-fellowship {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+/* Social Buttons */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.social-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  color: #ffffff;
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 15px -3px var(--accent-glow);
+}
+
+/* Left Sidebar Quick Highlights */
+.sidebar-box {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.sidebar-box-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.meta-list {
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+}
+
+.meta-item svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: var(--accent-primary);
+}
+
+/* Right Content Column */
+.main-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-prose {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.bio-lead {
+  font-size: 1.15rem;
+  font-weight: 450;
+  color: var(--text-primary);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.bio-lead strong {
+  color: var(--text-primary);
+}
+
+/* Download CV Banner */
+.action-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md), 0 4px 12px var(--accent-glow);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-lg), 0 8px 20px var(--accent-glow);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--card-bg);
+  color: var(--text-primary) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Research Tags */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.tag-pill {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+  transition: var(--transition);
+}
+
+.tag-pill:hover {
+  border-color: var(--accent-primary);
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   SECTION HEADINGS & LAYOUT
+   ========================================================================== */
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--card-border);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.section-icon-badge {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.section-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ==========================================================================
+   EDUCATION CARDS
+   ========================================================================== */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.edu-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--accent-primary);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.edu-card:hover::before {
+  opacity: 1;
+}
+
+.edu-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.edu-year {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background: var(--accent-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.edu-institution {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.edu-details {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   RESEARCH FELLOWSHIPS & HONORS CARDS
+   ========================================================================== */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.award-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  transition: var(--transition);
+  display: flex;
+  gap: 1rem;
+}
+
+.award-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-md);
+}
+
+.award-icon-box {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-md);
+  background: var(--accent-light);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.award-body {
+  flex: 1;
+}
+
+.award-org {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.award-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.award-date {
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   PUBLICATIONS LIST (hanzhang.xyz pub-list-item style)
+   ========================================================================== */
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.filter-btn {
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent-primary);
+  color: #ffffff;
+  border-color: var(--accent-primary);
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pub-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.pub-card:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-md);
+}
+
+.pub-meta-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pub-type-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent-light);
+  color: var(--accent-primary);
+}
+
+.pub-year-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+
+.pub-title a {
+  color: var(--text-primary);
+}
+
+.pub-title a:hover {
+  color: var(--accent-primary);
+}
+
+.pub-authors {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.pub-authors strong {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pub-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--card-border);
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.pub-action-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.pub-action-btn.btn-pdf {
+  background: var(--accent-light);
+  color: var(--accent-primary);
+  border-color: transparent;
+}
+
+.pub-action-btn.btn-pdf:hover {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+/* Collapsible Abstract */
+.pub-abstract {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  border-left: 3px solid var(--accent-primary);
+}
+
+.pub-abstract.open {
+  display: block;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* ==========================================================================
+   CONFERENCE PRESENTATIONS & WRITING CARDS
+   ========================================================================== */
+.presentation-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.presentation-item:last-child {
+  border-bottom: none;
+}
+
+.presentation-year {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  min-width: 4.5rem;
+}
+
+.presentation-content h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.presentation-venue {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Media Cards */
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.writing-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.writing-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-md);
+}
+
+.writing-outlet {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.writing-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.writing-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   REFEREES SECTION
+   ========================================================================== */
+.referee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.referee-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.referee-card:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-md);
+}
+
+.referee-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.referee-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-primary);
+  margin-bottom: 0.4rem;
+}
+
+.referee-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.referee-email {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  border-top: 1px solid var(--card-border);
+  padding: 3rem 0;
+  background: var(--bg-secondary);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+}
+
+.footer-links a:hover {
+  color: var(--accent-primary);
+}
+
+/* ==========================================================================
+   MODAL & TOAST DIALOGS (Live Search & BibTeX Viewer)
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 1rem 1rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-container {
+  background: var(--bg-primary);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.modal-close:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+/* Search input */
+.search-input-wrap {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.search-input-wrap svg {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.85rem;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--card-border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.search-item {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.search-item:hover {
+  border-color: var(--accent-primary);
+  transform: translateX(4px);
+}
+
+.search-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.search-item-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* BibTeX code view */
+.bibtex-code {
+  background: var(--code-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-all;
+  user-select: all;
+  margin-bottom: 1.25rem;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 110;
+  background: var(--accent-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.25s ease-out;
+  pointer-events: none;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   ANIMATIONS & RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+  }
+  .avatar-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-col {
+    position: static;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--card-border);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .action-banner {
+    justify-content: flex-start;
+  }
+}

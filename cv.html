@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum Vitae | Neerej Dev</title>
+  
+  <meta name="author" content="Neerej Dev" />
+  <meta name="description" content="Academic Curriculum Vitae of Neerej Dev, Doctoral Researcher at the University of Wolverhampton." />
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .cv-paper {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      margin-top: 2rem;
+    }
+    .cv-section-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-primary);
+      border-bottom: 2px solid var(--accent-light);
+      padding-bottom: 0.4rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .cv-entry {
+      margin-bottom: 1.5rem;
+    }
+    .cv-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 0.2rem;
+      flex-wrap: wrap;
+    }
+    .cv-entry-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .cv-entry-sub {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+    .cv-pdf-frame {
+      width: 100%;
+      height: 700px;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      margin-top: 2rem;
+      background: var(--bg-tertiary);
+    }
+    @media (max-width: 768px) {
+      .cv-paper { padding: 1.5rem; }
+      .cv-pdf-frame { height: 450px; }
+    }
+    @media print {
+      .site-header, .site-footer, .action-banner, .cv-pdf-container { display: none !important; }
+      .cv-paper { border: none; box-shadow: none; padding: 0; }
+      body { background: #ffffff; color: #000000; }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-dot"></span>
+          Neerej Dev
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="publications.html">Publications</a></li>
+          <li><a class="nav-link" href="research.html">Research & Grants</a></li>
+          <li><a class="nav-link" href="talks.html">Presentations</a></li>
+          <li><a class="nav-link" href="writing.html">Writing</a></li>
+          <li><a class="nav-link active" href="cv.html">CV</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="search-toggle" aria-label="Search site" title="Search (Cmd+K)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle Appearance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="container" style="padding-top: 3.5rem; padding-bottom: 5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
+        <div>
+          <h1 style="font-size: 2.75rem; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 0.5rem;">
+            Curriculum Vitae
+          </h1>
+          <p style="font-size: 1.1rem; color: var(--text-muted);">
+            Updated &middot; School of Social Sciences and Humanities, University of Wolverhampton
+          </p>
+        </div>
+
+        <div class="action-banner" style="margin-bottom: 0;">
+          <a href="files/Neerej_Dev_CV.pdf" target="_blank" class="btn-primary" download="Neerej_Dev_CV.pdf">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download PDF
+          </a>
+          <button class="btn-secondary" onclick="window.print()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print CV
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer -->
+      <div class="cv-pdf-container">
+        <iframe src="files/Neerej_Dev_CV.pdf" class="cv-pdf-frame" title="Neerej Dev Curriculum Vitae PDF"></iframe>
+      </div>
+
+      <!-- Structured Web CV Paper Format -->
+      <article class="cv-paper">
+        <header style="text-align: center; border-bottom: 1px solid var(--card-border); padding-bottom: 1.5rem; margin-bottom: 2rem;">
+          <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 0.35rem;">Neerej Dev</h2>
+          <p style="font-size: 1.15rem; font-weight: 600; color: var(--accent-primary); margin-bottom: 0.5rem;">
+            Doctoral Researcher | University of Wolverhampton
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+            <a href="mailto:N.dev2@wlv.ac.uk">N.dev2@wlv.ac.uk</a> &middot; 
+            <a href="tel:+447721998365">+44 7721 998365</a> &middot; 
+            <a href="https://www.linkedin.com/in/neerej-dev/" target="_blank">LinkedIn</a> &middot; 
+            <a href="https://orcid.org/0000-0003-3918-2406" target="_blank">ORCID</a> &middot; 
+            <a href="https://scholar.google.com/citations?user=PYp7N-kAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          </p>
+        </header>
+
+        <!-- Research Profile -->
+        <section>
+          <h3 class="cv-section-title">Research Profile</h3>
+          <p style="line-height: 1.75; color: var(--text-secondary);">
+            I am a doctoral researcher at the University of Wolverhampton examining how technology, mobility, and media infrastructures shape gendered identities and social stratification. My doctoral research draws on field ethnography with Malayali migrant care workers to examine masculinity, settler aspiration and labour precarity in the post-Brexit care economy. A closely related strand investigates how migrant workers use conversational AI, such as ChatGPT and Google Gemini, to negotiate the linguistic and documentary demands of professional care, developing the concept of <em>algorithmic acculturation</em>.
+          </p>
+          <p style="line-height: 1.75; color: var(--text-secondary);">
+            My research works have been supported by awards from the Swedish Research Council, the Swedish Collegium for Advanced Study and SOAS. I have also published in peer-reviewed journals including the <em>International Journal of Human–Computer Interaction</em> and <em>Economic and Political Weekly</em>. Alongside the qualitative core I bring statistical-methods and computational training, which I integrate with interpretive analysis, especially for social media analysis.
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h3 class="cv-section-title">Education</h3>
+          
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span>PhD, School of Social Sciences and Humanities, University of Wolverhampton</span>
+              <span class="cv-entry-date">2024 – present</span>
+            </div>
+            <div class="cv-entry-sub">
+              <strong>Thesis:</strong> “Scripting the Settler Dream: Instagram Influencers, Generative AI, and the Negotiation of Malayali Masculinities in UK Adult Social Care.”<br>
+              <strong>Supervisors:</strong> Prof. Meena Dhanda and Prof. Aleksandra Galasińska.
+            </div>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span>MPhil in Media Studies, Christ University, India</span>
+              <span class="cv-entry-date">2019 – 2021</span>
+            </div>
+            <div class="cv-entry-sub">
+              <strong>Dissertation:</strong> Critical Discourse Analysis of Selected Editorials in Malayala Manorama and Mathrubhumi.
+            </div>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span>MA in Media and Communication Studies, Christ University, India</span>
+              <span class="cv-entry-date">2016 – 2018</span>
+            </div>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span>BA (Hons) Journalism & English Literature, St. Aloysius College, India</span>
+              <span class="cv-entry-date">2013 – 2016</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Selected Publications -->
+        <section>
+          <h3 class="cv-section-title">Selected Peer-Reviewed Publications</h3>
+          
+          <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0 0.5rem;">Journal Articles</h4>
+          <ul style="padding-left: 1.25rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong> (forthcoming). Algorithmic Acculturation in Adult Social Care: Migrant Workers, Conversational AI and the Making of Professional English. <em>Journal of Ethnic and Migration Studies</em>.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong> (2026). From rivermind to care homes: Settler dreams and Britain’s care crisis. <em>Economic and Political Weekly</em>, 61(11). DOI: 10.71279/epw.v61i11.44344.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Joy, S. (2026). Human voices and algorithmic echoes: Resignifying transfeminine experiences through a hybrid poetics framework. <em>International Journal of Human–Computer Interaction</em>. DOI: 10.1080/10447318.2026.2615218.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Joy, S. (2025). Transcending silences: Queer(ing) cinematic memory of the Malayalee ‘spectacle’. <em>Literature & Aesthetics</em>.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Dev, N. (2023). Homosexuality as a dominant narrative in ‘Class’. <em>Economic and Political Weekly</em>, 58(19).
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Vipula, P. C. (2023). Artificial intelligence and art. <em>Economic and Political Weekly</em>, 58(8).
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Kumar, A. P. (2020). Effectiveness of ICT to transform teaching experience: A survey study among school teachers in Kerala. <em>ICSAH Proceedings</em>.
+            </li>
+          </ul>
+
+          <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0 0.5rem;">Book Reviews</h4>
+          <ul style="padding-left: 1.25rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong>, & Joy, S. (2025). Review of <em>Young People, Media, and Nostalgia: An Ethnography of How Youth Imagine Their Lives</em>. <em>Anthropological Forum</em>. DOI: 10.1080/00664677.2025.2550301.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              Joy, S., & <strong>Dev, N.</strong> (2024). Review of <em>Queer Reflections on AI: Uncertain Intelligences</em>. <em>Journal of Homosexuality</em>, 72(1). DOI: 10.1080/00918369.2024.2310178.
+            </li>
+            <li style="margin-bottom: 0.6rem;">
+              <strong>Dev, N.</strong> (2026). Review of <em>The Reparative Impulse of Queer Young Adult Literature</em>. <em>International Journal of LGBTQ+ Youth Studies</em>. DOI: 10.1080/29968992.2026.2742165.
+            </li>
+          </ul>
+
+          <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0 0.5rem;">Book</h4>
+          <ul style="padding-left: 1.25rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li>
+              <strong>Dev, N.</strong> (2022). <em>Understanding Public Relations</em>. Eureka Publication. ISBN: 978-93-91260-69-9.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Research Fellowships, Grants & Awards -->
+        <section>
+          <h3 class="cv-section-title">Research Fellowships, Grants & Awards</h3>
+          <ul style="padding-left: 1.25rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li><strong>European Sociological Association (ESA)</strong> - PhD Summer School, full programme award (22–24 August 2026).</li>
+            <li><strong>ARL (Leibniz Association) & Regional Studies Association</strong> - PhD Summer School, “New Perspectives on Urban Infrastructures,” University of Amsterdam, full programme award (8–10 July 2026).</li>
+            <li><strong>SOAS, University of London</strong> - Social Reproduction and AI Workshop, presentation grant (24–25 June 2026).</li>
+            <li><strong>Swedish Research Council (Vetenskapsrådet)</strong> - PhD Graduate School Scholar, “Reproductive Racial Capitalism: New Theoretical Perspectives Exploring Inequalities,” Linköping University, full funding (4–8 May 2026).</li>
+            <li><strong>University of Wolverhampton</strong> - Internal Research Fund, presentation grant for the IMISCOE Annual Conference (2026).</li>
+            <li><strong>Swedish Collegium for Advanced Study (SCAS)</strong> - Visiting Research Fellow, CAT proposal on medical student migration in Europe, full funding (20–26 October 2025).</li>
+          </ul>
+        </section>
+
+        <!-- Selected Conference Presentations -->
+        <section>
+          <h3 class="cv-section-title">Selected Conference Presentations</h3>
+          <ul style="padding-left: 1.25rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li>“Care and Migration: Recalibrating Masculinity among Malayali Migrant Men in the UK” - IMISCOE Annual Conference, Girona, Spain (2026).</li>
+            <li>“Algorithmic Acculturation in Adult Social Care: Migrant Workers, Conversational AI and the Making of Professional English” - PhD Summer School, University of Amsterdam & ARL (2026).</li>
+            <li>“Algorithmic Acculturation in Social Care: AI and the Reorganisation of Reproductive Labour among Migrant Workers” - Social Reproduction and Artificial Intelligence Workshop, SOAS, University of London (2026).</li>
+            <li>“Invisible Infrastructures of Care: Migrant Labour and Documentation Processes Enabled by Generative AI in UK Social Care” - Migrant Lives in the Age of AI, Western Sydney University (2026).</li>
+            <li>“Migrant Care Labour in the UK and Global Systems of Inequality” - PhD Graduate School on Reproductive Racial Capitalism, Linköping University (2026).</li>
+            <li>“Human Voices and Algorithmic Echoes: Resignification of Trans-experiences Through Poetic Inquiry” - QGrad Conference, University of California, Los Angeles (2024).</li>
+            <li>“Poetic Futurity: Envisioning Trans Narratives as Technopoetic Utopia” - 6th Interactive Film and Media Conference, Toronto Metropolitan University (2024).</li>
+            <li>“Muffled Narratives: Indian Journalism under the Shadow of Legal Constraints” - Journalism Safety Research Network Symposium, University of Sheffield (2023).</li>
+            <li>“The Slant of the Vernacular Media: Language and Ideology in Malayalam Newspapers” - International Conference on Crisis and Conflict in the 21st Century, REVA University (2022).</li>
+            <li>“Populism of the Left: Kerala Assembly Election 2021 and Social Media” - International Conference on New Populism and Responses of the 21st Century, CHRIST University (2021).</li>
+          </ul>
+        </section>
+
+        <!-- Public Writing -->
+        <section>
+          <h3 class="cv-section-title">Public Writing</h3>
+          <ul style="padding-left: 1.25rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            <li><a href="https://www.deccanherald.com/opinion/in-perspective/climate-change-catching-up-with-lost-time-1118784.html" target="_blank">Climate change: Catching up with lost time</a> – <em>Deccan Herald</em></li>
+            <li><a href="http://southasiajournal.net/from-global-doom-to-scientific-framing-shifting-discourses-on-climate-change-in-india/" target="_blank">From Global Doom to Scientific Framing: Shifting discourses on climate change in India</a> – <em>South Asia Journal</em></li>
+            <li><a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/reviewing-the-past-unscathed-nostalgia-or-ghoulish-melancholia/" target="_blank">(Re)viewing the past: Unscathed nostalgia or ghoulish melancholia?</a> – <em>The Times of India</em></li>
+            <li><a href="https://timesofindia.indiatimes.com/blogs/the-untravelled-postcards/the-censored-war-visual-experience-through-images/" target="_blank">The censored war: Visual experience through images</a> – <em>The Times of India</em></li>
+            <li><a href="https://www.daijiworld.com/chan/exclusiveDisplay?articlesID=5831" target="_blank">The Flunking Role: From Instructor to Curator</a> – <em>Daiji World</em></li>
+          </ul>
+        </section>
+
+        <!-- Referees -->
+        <section>
+          <h3 class="cv-section-title">Referees</h3>
+          <div style="margin-bottom: 1.25rem;">
+            <strong>Professor Meena Dhanda DPhil (Oxford), SFHEA</strong><br>
+            Professor of Philosophy and Cultural Politics, University of Wolverhampton; Visiting Professor, London School of Economics and Political Science (LSE).<br>
+            Editor-in-Chief, <em>Oxford Intersections: Racism By Context</em> (Oxford University Press)<br>
+            Email: <a href="mailto:M.Dhanda@wlv.ac.uk">M.Dhanda@wlv.ac.uk</a>
+          </div>
+          <div>
+            <strong>Dr Divya Kumari K. P.</strong><br>
+            Assistant Professor, Department of Media Studies, CHRIST (Deemed to be University), Bangalore, India.<br>
+            Email: <a href="mailto:divyakumari.kp@cucc.in">divyakumari.kp@cucc.in</a>
+          </div>
+        </section>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>&copy; 2026 Neerej Dev. Hosted on GitHub Pages.</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="mailto:N.dev2@wlv.ac.uk">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal-overlay" id="search-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Instant Search</h3>
+        <button class="modal-close" id="search-modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search CV and papers..." />
+        </div>
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
